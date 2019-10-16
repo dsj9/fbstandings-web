@@ -15,7 +15,7 @@ const MapChart = () => {
 
     useEffect(() => {
         axios
-            .get('http://172.16.47.171:5000/')
+            .get(`${window.location.origin}/api/`)
             .then(resp => setMapItems(resp.data));
     }, []);
 
